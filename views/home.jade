@@ -1,0 +1,28 @@
+doctype html
+html
+	include head
+	body
+		include navbar
+		
+		.wrapper
+			.header
+			.container-fluid
+				div.row.top30
+					div.col.col-md-5.col-md-offset-3.col-sm-7.col-sm-offset-3
+						div.panel
+							div.panel-heading
+							div.panel-body
+								div.row
+									div.col.col-md-12
+										form#formAdicionarVideo
+											div.form-group
+												label.control-label(for="linkYt") Copie um link aqui
+												input.form-control(type="text", name="linkYt", autofocus, value="https://www.youtube.com/watch?v=2cYSB8LR9JU")
+
+											div.form-group
+												span#spnNomeVideo
+											div.form-group
+												img#imgThumb(style="width:100px; height:100px;")
+											div.row
+												div.col.col-md-6.col-sm-6
+													button#btnAdicionar.btn.btn-success.btn-block(type="submit") Adicionar
